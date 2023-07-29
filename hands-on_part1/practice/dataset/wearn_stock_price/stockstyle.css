@@ -1,0 +1,299 @@
+@charset "big5";
+/* CSS Document  */body{background-color:#FFF;color:#464646;/*font-family: Arial,  sans-serif;*/margin:0;padding:0}
+input,select,checkbox{font-size:13px}
+a:link,a:visited{color:#08409c;text-decoration:none}
+a:hover{text-decoration:underline}
+.stockup{color:#cd0000;font-family:Arial,sans-serif}
+.stockdown{color:#006d00;font-family:Arial,sans-serif}
+.right{text-align:right}
+.center{text-align:center}
+input.id1{border-bottom:1px solid #08409c;border-left:1px solid #5f9fd3;border-right:1px solid #08409c;border-top:1px solid #5f9fd3;color:#464646;background-image:url(https://images.wearn.com/bbsicon/images/bg_submit.gif);background-repeat:repeat-x;padding-top:3px;margin:0px}
+input.id2{border-bottom:1px solid #08409c;border-left:1px solid #5f9fd3;border-right:1px solid #08409c;border-top:1px solid #5f9fd3;color:#CC0066;background-image:url(https://images.wearn.com/bbsicon/images/bg_submit.gif);background-repeat:repeat-x;padding-top:3px;margin:0px}
+.major,.major a:link,.major a:visited,.major a:hover {color:#ff000}
+.minor {color:#39b44a}
+.descr {padding-left:155px;font-size:12px}
+.boarderc {border-bottom:3px  double #CCCCCC; padding-bottom:7px}
+/* *****************Layout Divs ****************************/
+#stockwrapper{margin-right:auto;margin-left:auto;width:980px}
+#stocknavl{float:left;width:182px;padding:0}
+#stockmainr{float:left;width:789px;padding:0;margin-left:6px;*margin-left:6px;_margin-left:3px}
+/* default thermometer   */
+#thermometer {  border: 1px solid #E1E1E1;  font-family: Arial,sans-serif;  height: 144px;  margin-top: 5px;  width: 174px;}
+#thermometerinfor {  font-family: Arial,sans-serif;  font-size: 11px;  line-height: 16px;  margin-bottom: -92px;  margin-left: 140px;  width: 14px;}
+#thermometernb {  font-family: Arial,sans-serif;  font-size: 12px;  height: 120px;  text-align: center;}
+/* left  stocknav   */
+.stocknav{width:182px}
+.stocknav a:link, .stocknav a:visited, .stocknav a:hover{font-size:15px;line-height:26px}
+.stocknavl{float:left;border-top:1px solid #bbbbbb;width:89px;border-right:1px solid #c2c2c2;border-left:1px solid #bbbbbb}
+.stocknavl h3{font-size:15px;border-bottom:2px solid #afcfe9;margin:0 4px 0 4px;padding:3px 0 0 3px}
+.stocknavl p{font-size:15px;border-bottom:1px solid #c2c2c2;margin:0;padding:2px 4px 0 4px;line-height:26px;word-spacing:1px}
+.stocknavlstit{font-size:15px;font-weight:normal;margin-right:36px}
+.stocknavr{float:left;width:90px;border-top:1px solid #bbbbbb;border-right:1px solid #bbbbbb}
+.stocknavr h3{font-size:15px;border-bottom:2px solid #afcfe9;margin:0 4px 0 4px;padding:3px 0 0 3px}
+.stocknavr p{font-size:15px;border-bottom:1px solid #c2c2c2;margin:0;padding:2px 4px 0 4px;line-height:26px;word-spacing:2px}
+
+html:root .stocknavrb{height:106px;}/*ff*/
+.stocknavrb{height:106px;}/*ie */
+.stocknavb{border-right:1px solid #c2c2c2;border-left:1px solid #bbbbbb;float:left;width:180px}
+.stocknavb h3{font-size:15px;border-bottom:2px solid #afcfe9;margin:0 4px 0 4px;padding:5px 0 0 3px}
+.stocknavb p{font-size:15px;border-bottom:1px solid #c2c2c2;margin:0;padding:2px 4px 0 4px;line-height:26px;word-spacing:3px}
+.stocknavblog{text-align:center;padding:5px 0 0 0 }
+/* right   */
+/* stockchart   */
+.stockchart{float:left;margin:22px 0 0 2px;width:266px}
+.stockchartlist{font-size:12px;width:258px;border-bottom:1px solid #d6dce1}
+.stockchartlist th{font-weight:normal}
+/*  fundthree */
+.stockfund3{float:left;font-size:13px;line-height:20px;margin:7px 0 0 5px;width:120px;}
+.stockfund3 a:link, .stockfund3 a:visited, .stockfund3 a:hover{font-size:13px}
+/*  credit */
+.stockcredit{float:right;font-size:13px;line-height:20px;margin:7px 10px 0 0;width:120px;}
+.stockcredit a:link, .stockcredit a:visited, .stockcredit a:hover{font-size:13px}
+/* stockdate*/
+.stockdate a:link, .stockdate a:visited, .stockdate a:hover{float:left;font-size:12px;background-image:url(images/stockdate_bg.gif);background-repeat:no-repeat;width:239px;height:21px;padding:6px 0 0 23px; margin-top:10px}
+/* qua */
+.stockqua{float:left;width:332px;margin-left:0;*margin-left:0;_margin-left:-3px}
+.stockqualist caption{font-size:15px;border:1px solid #afafaf;background-image:url(images/stockquatit_bg.gif);word-spacing:90px;padding:4px}
+.stockqualist{margin-top:-10px}
+.stockqualist table{border-left:1px solid #afafaf;border-bottom:1px solid #afafaf;font-size:12px}
+.stockqualist th{font-weight:normal;color:#5f9fd3;border-right:1px solid #afafaf;padding:5px 0 2px 0;font-size:13px;font-family: Arial,  sans-serif}
+.stockqualist td{border-top:1px solid #afafaf;border-right:1px solid #afafaf;text-align:right;padding-top:3px;font-size:12px;font-family: Arial,  sans-serif}
+.stockqualist a:link, .stockqualist a:visited, .stockqualist a:hover {font-size:12px;font-family: Arial,  sans-serif}
+.stockqualistbg{background-color:#f2f2f2}
+.stockqualistl{float:left;margin-left:8px;font-family: Arial,  sans-serif}
+.stockqualistr{float:right;padding-right:5px;font-family: Arial,  sans-serif}
+/*stockasearch*/
+.stockasearch{font-size:15px;color:#666666;height:46px;*height:50px;_height:49px;margin-top:5px}
+.stockasearchbox{border:1px solid #666666;padding-top:3px}
+#txtHint {display:none;width:109px;height:auto;background:#FFFFFF none repeat;border:1px solid #666;overflow:hidden;position:absolute;z-index:9050;margin:-3px 0 0 168px;padding-top:0;}
+#txtHint li{text-align:left;padding:1px;list-style-type:none;margin-left:-32px; vertical-align:top}
+#txtHint a{font-size:13px;color:#666}
+#txtHint a:hover{background-color:#3c8dd0;text-decoration:none;color:#FFFFFF;font-size:13px}
+/*stocknewbook*/
+.stocknewbook{float:left;margin:5px 0 3px 6px;*margin:10px 0 3px 6px;_margin:10px 0 3px 4px;background-image:url(images/stocknewbook_bg.gif);padding:7px 3px 8px 3px;*padding:4px 3px 8px 3px;}
+.stocknewbooks img{ margin:3px 1px;vertical-align:middle; border: 1px solid #DDD}
+/*stocktaifex*/
+.stocktaifex{float:left;background-image:url(images/taifex_bg.gif);padding:7px 0 6px 2px;*padding:7px 0 5px 2px;margin-top:5px;width:786px}
+#byitem h5{font-size:12px;display:inline;margin:0 30px;}
+#byitem a:link, #byitem a:visited, #byitem a:hover {font-size:12px;font-weight:bold}
+#byitem ul.vert{list-style-type:none;display:inline;margin:0;padding:0;font-size:12px}
+#byitem ul.vert li{list-style-type:none;display:inline;margin:0;padding:0}
+#byitem ul.horz{list-style-type:none;display:inline;margin:0;padding:0}
+#byitem ul.horz li{list-style-type:none;display:inline;margin:0;padding:0}
+#byitem ul.horz li.name{list-style-type:none;display:inline;margin:0 28px 0 5px;}
+/*stockcharttop*/
+#stockcharttop{float:left;margin-top:16px}
+.stockcharttopnva ul{margin:0;padding:0;list-style:none}
+.stockcharttopnva li {display:inline;list-style-type:none}
+.stockcharttopnva a{font-size:15px;color:#08409c;text-decoration:none;background-image:url(images/stockcharttopnva_bgs.gif);padding:7px 14px 10px 14px;background-repeat:no-repeat;position:relative;background-position:top;background-image:url(images/stockcharttopnva_bgs.gif)}
+.stockcharttopnva a:hover,#stockcharttop .chart_se a{color:#FFFFFF;text-decoration:none;background-image:url(images/stockcharttopnva_bg.gif);background-position:top;position:relative;background-repeat:no-repeat;font-size:15px}
+.stockcharttopcon{border:1px solid #afafaf;width:788px;padding-top:5px;margin-top:2px;*margin-top:1px}
+.stockcharttopcon img{margin:1px}
+/*stockbbshot*/
+#stockbbshot{float:left;margin-top:6px;width:790px; }
+.stockbbshot{ color:#4d91c8; font-weight:bold;max-height: 145px;overflow: hidden;}
+.stockbbshotlist{border-top:3px  double #afafaf;border-right:1px double #afafaf;border-bottom:3px  double #afafaf;border-left:1px double #afafaf;height:114px;*height:116px;color:#464646; font-weight:normal;line-height:normal;*line-height:18px}
+.stockbbshotlist a:link,.stockbbshotlist a:visited,.stockbbshotlist a:hover{font-size:12px}
+.stockbbshottx{float:left;width:312px;}
+.stockbbshottx ul{margin:0;padding:5px 0 0 20px; }
+.stockbbshottx li{font-size:13px;list-style-image:url(images/stockbbshot_icon.gif);}
+.stockbbshotnm{float:left;width:80px;}
+.stockbbshotnm ul{margin:0;padding:5px 0 0 0;}
+.stockbbshotnm li{font-size:13px;list-style:none}
+/*stockmarket*/
+#stockmarket{float:left;margin-top:16px;width:420px}
+.stockmarketnav ul{margin:0;padding:0;list-style:none;font-size:13px}
+.stockmarketnav li{list-style-type:none;display:inline}
+.stockmarketnav a:link, .stockmarketnav a:visited{font-size:15px;color:#08409c;text-decoration:none;border:1px solid #afafaf;border-bottom: none;font-size:13px;padding:7px 4px 1px 4px;*padding:7px 4px 0px 4px;background-image:url(images/stockmarketnav_bgs.gif);position:relative}
+.stockmarketnav a:hover,#stockmarket .stt_se a{background-image:url(images/stockmarketnav_bg.gif);text-decoration:none;position:relative;border-bottom:1px solid #ebebeb}
+.stockmarketcon{background-color:#ebebeb;border:1px solid #afafaf;margin-top:1px;padding:5px 20px 5px 20px;height:260px}
+.stockmarketcon a:link, .stockmarketcon a:visited, .stockmarketcon a:hover {font-size:13px}
+.stockmarketcon table{border-left:1px solid #afafaf;border-bottom:1px solid #afafaf;font-size:13px;width:48%}
+.stockmarketcon th{font-weight:normal;border-right:1px solid #afafaf;border-top:1px solid #afafaf;padding:3px 0 2px 0;*padding:4px 0 1px 0;font-size:13px}
+.stockmarketcon td{border-top:1px solid #afafaf;border-right:1px solid #afafaf;text-align:center;padding:5px 7px 1px 3px;font-size:13px;background-color:#FFFFFF}
+.stockmarketa50 th{background-image:url(images/stockmarketa50_bg.gif)}
+.stockmarketb50 th{background-image:url(images/stockmarketb50_bg.gif)}
+.stockmarketc50 th{background-image:url(images/stockmarketc50_bg.gif)}
+/*stockcaddad*/
+#stockcaddad{float:left;margin-top:14px;margin-top:12px \9;width:356px;margin-left:10px}
+.stockcaddadnav ul{margin:0;padding:0;list-style:none}
+.stockcaddadnav li{list-style-type:none;display:inline}
+.stockcaddadnav a:link, .stockcaddadnav a:visited{font-size:15px;color:#464646;text-decoration:none;border:1px solid #afafaf;border-bottom: none;font-size:13px;padding:7px 2px 1px 4px;*padding:7px 2px 0px 4px;background-image:url(images/stockmarketnav_bgs.gif);position:relative}
+.stockcaddadnav a:hover,#stockcaddad .stb_se a{background-image:url(images/stockmarketnav_bg.gif);text-decoration:none;position:relative;border-bottom:1px solid #ebebeb;color:#464646}
+.stockcaddadnav img{cursor:pointer}
+.stockcaddadcon{background-color:#ebebeb;border:1px solid #afafaf;margin-top:1px;margin-top:-1px \9;padding:5px 10px 5px 10px;height:260px}
+.stockcaddadcon a:link, .stockcaddadcon a:visited, .stockcaddadcon a:hover {font-size:13px}
+.stockcaddadcon table{border-left:1px solid #afafaf;border-bottom:1px solid #afafaf;font-size:13px;width:48%}
+.stockcaddadcon th{font-weight:normal;border-right:1px solid #afafaf;border-top:1px solid #afafaf;padding:3px 0 2px 0;*padding:4px 0 1px 0;font-size:13px}
+.stockcaddadcon td{border-top:1px solid #afafaf;border-right:1px solid #afafaf;text-align:center;padding:5px 7px 1px 3px;font-size:13px;background-color:#FFFFFF}
+.stockcad th{background-image:url(images/stockcad_bg.gif)}
+.stockdad th{background-image:url(images/stockdad_bg.gif)}
+/* stock3chart */
+.stock3chart ul{margin:18px 0 1px;*margin:21px 0 1px;padding:0;list-style:none}
+.stock3chart li{list-style-type:none;display:inline;padding:0 2px}
+.stock3chart a:link, .stock3chart a:visited{font-size:15px;color:#464646;text-decoration:none;border:1px solid #afafaf;font-size:13px;padding:7px 2px 2px 4px;*padding:7px 2px 1px 4px;background-image:url(images/stockmarketnav_bgs.gif);position:}
+.stock3chart a:hover,.stock3chart .stb_se a{background-image:url(images/stockmarketnav_bg.gif);text-decoration:none;position:;border-bottom:1px solid #ebebeb;color:#464646}
+/*****************************************************************/
+/*******************Layout Divs astock****************************/
+#astockwrapper{margin-right:auto;margin-left:auto;width:980px;margin-top:5px;}
+#astocknav{width:980px;margin-right:auto;margin-left:auto; text-align:center}
+#astockmain{float:left;width:736px;padding:0;margin-left:20px;*margin-left:20px;_margin-left:10px;margin-top:12px}
+#astockads{float:left;width:200px;padding:0;margin-left:25px;margin-top:12px}
+#astockbank{float:left;width:980px;margin-top:12px}
+/*    astocknav   */
+.astocknav ul{margin:0 0 0 4px;list-style:none;background-image:url(images/stock_nav_bg.gif);background-repeat:no-repeat;padding:10px 0 15px 0px;word-spacing:12px}
+.astocknav li {display:inline;list-style-type:none;border-left:1px solid #FFFFFF;border-spacing:inherit;padding-left:10px}
+.astocknav a:link, .astocknav a:visited,.astocknav a:hover{font-size:15px}
+
+/* main */
+/* tit*/
+#astockmaintop{}
+#astockmainl{float:left;width:400px; margin-top:10px}
+.astocktit h3{font-size:15px;display:inline;background-image:url(images/stock_stit_icon.gif);background-repeat:no-repeat;color:#08599c;padding:3px 0 0px 10px;*padding:1px 0 1px 10px;margin:0px;}
+.astocktit h4{font-size:15px;display:inline;padding-left:10px}
+.astocktit h5{font-size:15px;display:inline;font-weight:normal;padding-left:20px}
+/* search*/
+.astockasearch{margin:5px 0 0 0;font-size:15px;color:#666666;padding-left: 10px;}
+/* king*/
+#astockmainr{float:left}
+* > .stockfund3 p ,.stockcredit p {
+    margin: 0;
+}
+.stockfund3 h3{font-size:13px;width:129px;font-weight:400;height:20px;margin:0;padding:0;}
+.stockcredit h4{font-size:13px;width:128px;font-weight:400;height:20px;margin:0;padding:0;}
+
+.astockking{background-image:url(images/astockking_bg.gif);width:328px;height:80px}
+.astockkingtit{padding:14px 0 0 5px;width:102px;float:left}
+.astockkingtit p{text-align:center;margin:6px 0 5px 0;font-size:15px}
+.astockkingcon{font-size:15px;margin:9px 2px 0 0 ;background-image:url(images/astockking_con_bg.gif);background-repeat:no-repeat;float:left}
+.astockkingcont th{font-size:15px;font-weight:normal;padding:8px 2px 2px 2px }
+.astockkingcont td{font-size:15px;padding:8px 2px 2px 2px ;text-align:right}
+.astockbillb{color:#5f9fd3}
+/*menu*/
+#astockcon{float:left}
+#astockcon .no {    margin: 8px 18px;background-image: none;*margin: 8px 21.5px 0px 5px;}
+.astockmenu{margin-left:10px;width:410px;float:left; margin-top:5px}
+.astockmenu h3{color:#5f9fd3;font-size:15px;margin:0;background-image:url(images/astockmenu_tit_bg.gif);background-repeat:no-repeat;background-position:bottom}
+.astockmenutit{margin-top:10px}
+.astockmenu h4{font-size:15px;font-weight:normal;display:inline;background-image:url(images/astockmenu_tit_ic.gif);background-repeat:no-repeat;background-position:left;margin:8px 4px 8px 4px;*margin:8px 6px 8px 6px;padding-left:10px;word-spacing:15px;*word-spacing:11px;line-height:34px;} 
+.astockmenu h4 img{*margin-top:-10px/*i6*/}
+*> .astockmenu h4 img{margin-top:-12px} /*i7*/
+html>/**/body .astockmenu h4 img{margin-top:-7px;}/*i8*/
+html:root .astockmenu h4 img{margin-top:-7px \9;}/*ffgg i9*/
+.astockchartpic{float:left;margin:0px 0 0 6px}
+.astockchart{float:left;margin:10px 0 0 6px}
+.astockchart table{ border-top:3px double #959595; font-size:13px; border-spacing:0;border-left:1px solid #959595;}
+.astockchart caption{ margin:0; padding:0; letter-spacing:1px; font-size:12px; font-family: Arial,  sans-serif}
+.astockchart th{border-bottom:0px dashed #959595; border-right:1px solid #959595; padding:5px 1px 2px; background-image:url(images/astockchartlist_bg1.gif); background-repeat:repeat-x; color:#01467f; font-weight:normal}
+.astockchart td{ text-align:center;border-bottom:1px solid #959595; border-right:1px solid #959595; background-color:#fff; padding:3px 2px 2px; line-height:16px; vertical-align:baseline; font-family: Arial,  sans-serif}
+.astockchartall {color:#00307e; font-weight:bold}
+.astockbbsnews{float:left;}
+.astockbbsnews h3{background-image:url(images/astockbbsnews_tit_bg.gif);background-repeat:no-repeat;font-size:15px;height:35px;margin:0;padding:6px 0 0 18px;width:715px}
+.astockbbsnews h4{background-image:url(images/astockbbsnews_tit2_bg.gif);background-repeat:no-repeat;font-size:15px;height:35px;margin:10px 0 0;padding:4px 0 0 18px;width:715px}
+.astockbbsnews h5{background-image:url(images/astockbbsnews_tit2_bg.gif);background-repeat:no-repeat;font-size:15px;height:35px;margin:10px 0 0;padding:6px 0 0 18px;width:715px}
+.astockbbsnews h6{background-image:url(images/astockbbsnews_tit3_bg.gif);background-repeat:no-repeat;font-size:15px;height:35px;margin:10px 0 0;padding:6px 0 0 18px;width:715px}
+.astockbbsnewstits{font-weight:400;padding-left:10px}
+.astockbbsnews ul{margin:0;padding:0 0 0 36px}
+.astockbbsnews a:link,.astockbbsnews a:visited,.astockbbsnews a:hover{font-size:15px;margin: 0 0 0 4px;}
+.astockbbsnews li{font-size:12px;list-style-type:circle}
+/* astocknewbooks */
+#astockadsdivs{float:left;padding-left:18px; width:190px}
+#astocknewbook{float:left;padding-left:4px}
+.astocknewbook{background-image:url(images/stocknewbook_bg.gif);margin:0;padding:4px 0 4px;width:182px;}
+.astocknewbooks{padding:3px 0 0 3px}
+.astocknewbooks img{margin:4px 1px  ;vertical-align:middle;border:1px solid #DDD}
+/* astockads */
+#astockads{float:left;margin:20px 0 0 0;padding:0;}
+#astockads p{margin:0;padding:0}
+/*back */.astockbank{margin-top:20px;text-align:center}
+/* astockwmz */
+#astockwmz{float:left; margin-top:20px;}
+#astockwmz img{ border:1px solid #959595; width:190px}
+/*****************************************************************/
+/*******************Layout Divs stock all*************************/
+.stockalllistbg1{/*background-color:#f0f0f0*/}
+.stockalllistbg2{background-color:#FFF}
+.stocksmalldivs{padding:0 0 60px}
+.stocktitex{font-weight:400}
+
+.stockalllist{margin-left:auto;margin-right:auto;margin-top:20px;text-align:center;width:920px}
+.stockalllist h2{color:#08599c;font-size:16px;margin:0 0 10px;text-align:center}
+.stockalllist h3{color:#08599c;font-size:16px;font-weight:400;margin:0 0 10px;text-align:center}
+.stockalllist table{border-bottom:1px solid #b7b7b7;border-left:2px solid #b7b7b7;border-right:1px solid #b7b7b7;border-top:2px solid #b7b7b7}
+.stockalllist td{border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:15px;padding:3px 2px 0;height:33px;}
+.stockalllist th{background-color:#F0F0F0;border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:13px;font-weight:700;padding:3px 2px 0; height:30px}
+.stockalllist form{margin:0; padding:0}
+.stockalllist caption{padding-bottom:5px}
+/*chartstock */.chartstock{margin-top:20px;text-align:center}
+.chartstock h2{font-size:16px}
+/*fundthree */.stockfundthree{margin-left:auto;margin-right:auto;margin-top:20px;width:979px}
+.stockfundthree h2{color:#08599c;font-size:15px;font-weight:400;margin:0 0 10px;text-align:center;word-spacing:7px}
+.stockfundthree h3{color:#08599c;font-size:16px;margin:3px;text-align:center}
+.stockfundthree p{font-size:13px;margin:0;padding:0;text-align:right}
+/*two table */.stockfundthreecon{margin-left:auto;margin-right:auto;text-align:center;width:700px}
+.stockfundthreecon table{border-bottom:1px solid #b7b7b7;border-left:2px solid #b7b7b7;border-right:1px solid #b7b7b7;border-top:2px solid #b7b7b7;margin-right:28px}
+.stockfundthreecon td{border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:15px;padding:3px 2px 0;    height: 30px;}
+.stockfundthreecon th{background-color:#F0F0F0;border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:15px;font-weight:700;padding:3px 2px 0}
+.stockfundthreecon caption{padding-bottom:5px}
+.stockfundthreebuy{ color:#cd0000;}
+.stockfundthreesell{ color:#006d00;}
+
+/*one table */.stockfundthreecon1{margin-left:auto;margin-right:auto;text-align:center;width:700px}
+.stockfundthreecon1 table{border-bottom:1px solid #b7b7b7;border-left:2px solid #b7b7b7;border-right:1px solid #b7b7b7;border-top:2px solid #b7b7b7}
+.stockfundthreecon1 td{border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:15px;padding:3px 2px 0}
+.stockfundthreecon1 th{background-color:#F0F0F0;border-bottom:1px solid #b7b7b7;border-right:1px solid #b7b7b7;font-size:15px;font-weight:700;padding:3px 2px 0}
+.stockfundthreecon1 caption{padding-bottom:5px}
+/*credit */.astockcredit{border:none;margin-top:15px}
+.astockcredit table tr td{border:none;text-align:left}
+/*sma */.stocksmanav{color:#08599c;word-spacing:7px}
+/*warrant */.stockwarranttit{font-size:13px;font-weight:700}
+/*vip */
+.bbsvip h2{color:#08599C; font-size:15px; margin:0; padding:10px; text-align:center}
+.bbsvip table{border:3px double #7a879b;border-collapse:collapse;border-spacing:0;}
+.bbsvip caption{ font-weight:bold; letter-spacing:5px; color:#1170bd; padding:10px}
+.bbsvip th{background-color:#e8f1ff; word-spacing:4px; letter-spacing:1px; color:#1e3b5d; background-image:url(images/bbsvip_titbg.gif); background-color:#cbdcfb; background-repeat:repeat-x}
+.bbsvip th span{ font-weight:normal;}
+.bbsvip th,.bbsvip td{padding:4px;border:1px solid #7a879b;}
+.bbsvip input[type="text"]{ border:1px solid #6699cc; font-size:15px; color:#464646}
+.bbsvip select{ border:1px solid #6699cc; font-size:15px; color:#225272}
+
+
+/*------------------------fundthree_20130527.asp------------------------------*/
+/*******************Layout Divs stock all*************************/
+
+.stockalllistbg3{background-color:#fff}
+.stockalllistbg4{background-color:#e6e6f2}
+
+
+.stockalllist1{margin-left:auto;margin-right:auto;margin-top:20px;text-align:center;width:920px}
+.stockalllist1 h2{color:#08599c;font-size:16px;margin:0 0 10px;text-align:center}
+.stockalllist1 h3{color:#08599c;font-size:16px;font-weight:400;margin:0 0 10px;text-align:center}
+.stockalllist1 table{border-bottom:1px solid #1d2172;border-left:2px solid #1d2172;border-right:1px solid #1d2172;border-top:2px solid #1d2172}
+.stockalllist1 td{border-bottom:1px solid #1d2172;border-right:1px solid #1d2172;font-size:15px;padding:3px 2px 0;height:30px;}
+.stockalllist1 th{background-color:#F0F0F0;border-bottom:1px solid #1d2172;border-right:1px solid #1d2172;font-size:13px;font-weight:700;padding:3px 2px 0;}
+.stockalllist1 form{margin:0; padding:0}
+.stockalllist1 caption{padding-bottom:5px}
+
+
+.stockup2{color:#cd0000;font-family:Arial,sans-serif}
+.stockdown2{color:#006d00;font-family:Arial,sans-serif}
+
+/*chartstock */
+
+/*------------------------fundthree_20130527-1.asp------------------------------*/
+/*******************Layout Divs stock all*************************/
+
+.stockalllistbg5{background-color:#fff}
+.stockalllistbg6{background-color:#fff}
+
+.stockalllist2{margin-left:auto;margin-right:auto;margin-top:20px;text-align:center;width:920px}
+.stockalllist2 h2{color:#08599c;font-size:16px;margin:0 0 10px;text-align:center}
+.stockalllist2 h3{font-size:16px;font-weight:400;margin:0 0 10px;text-align:center}
+.stockalllist2 table{border-bottom:1px solid #cccccc;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-top:1px solid #cccccc}
+.stockalllist2 td{border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;font-size:15px;padding:3px 2px 0;height:23px;}
+.stockalllist2 th{background-color:#F0F0F0;border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;font-size:13px;font-weight:700;padding:3px 2px 0;}
+.stockalllist2 form{margin:0; padding:0}
+.stockalllist2 caption{padding-bottom:5px}
+
+
+/*chartstock */
